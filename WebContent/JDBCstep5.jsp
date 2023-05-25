@@ -65,6 +65,17 @@ out.print("구문 생성 성공...<br>");
 %>
 
 
+<!-- Step 5 SQL Activate -->
+
+<%
+
+//pstmt.executeQuery(); // Read 즉 가지고 나오는 데이터가 있을경우 사용
+pstmt.executeUpdate(); // Create, Update, Delete 즉 가지고 나오는 데이터가 없는 경우 사용
+out.print("테이블 삭제 성공...<br>");
+%>
+
+
+
 
 </body>
 </html>
